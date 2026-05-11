@@ -1,0 +1,13 @@
+{
+  "name": "persistence-demo",
+  "objective": "Exercise EDR coverage of registry / scheduled-task persistence and credential dumping.",
+  "steps": [
+    {"technique_id": "T1057", "parameters": {}, "note": "discovery"},
+    {"technique_id": "T1083", "parameters": {}, "note": "discovery"},
+    {"technique_id": "T1547.001", "parameters": {"value_name": "WinUpd", "target": "C:\\\\Users\\\\Public\\\\u.exe"}},
+    {"technique_id": "T1053.005", "parameters": {"task_name": "GoogleUpdater", "cadence": "every 1 hour"}},
+    {"technique_id": "T1003.001", "parameters": {}},
+    {"technique_id": "T1071.001", "parameters": {"c2_host": "cdn.example.invalid", "interval_s": 60}},
+    {"technique_id": "T1041", "parameters": {"target_host": "loot.example.invalid", "bytes": 4096}}
+  ]
+}
